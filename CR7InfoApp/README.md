@@ -1,73 +1,74 @@
 # Assignment X – CR7InfoApp
 
-Course: Mobile Computing
-Student(s): Dinis Lino
-Date: 15 de Março 2025
+Course: Mobile Computing  
+Student(s): Dinis Lino  
+Date: 15 de Março 2025  
 Repository URL: https://github.com/dinis6045/Trabalho-1-todos/tree/main/CR7InfoApp
 
 ---
 
 # CR7InfoApp
 
-CR7InfoApp is a simple Android application developed using **Kotlin** and **Android Studio**.
-The goal of this project is to demonstrate basic Android development concepts through a small application that presents information about the football player **Cristiano Ronaldo**.
+CR7InfoApp é uma aplicação Android simples desenvolvida utilizando **Kotlin** e **Android Studio**.
 
-The project focuses on:
+O objetivo deste projeto é demonstrar conceitos básicos de desenvolvimento Android através de uma pequena aplicação que apresenta informação sobre o jogador de futebol **Cristiano Ronaldo**.
 
-* Kotlin programming fundamentals
-* Android Activities
-* Layout design with XML
-* Navigation between screens
-* User interaction
+O projeto foca-se em:
 
----
-
-# 1. Introduction
-
-This assignment aims to introduce the development of Android mobile applications using Kotlin.
-
-The main objective of the project was to create a small application capable of displaying information about Cristiano Ronaldo through a simple interface with navigation between screens.
-
-Through this project it was possible to apply fundamental Android concepts such as:
-
-* Activities
-* Layouts
-* Intents
-* Event handling
-* UI design
-
-The application demonstrates how a basic mobile interface can be built and how users can navigate between different screens.
+- fundamentos de programação em Kotlin  
+- utilização de Activities  
+- criação de layouts com XML  
+- navegação entre ecrãs  
+- interação com o utilizador  
 
 ---
 
-# 2. System Overview
+# 1. Introdução
 
-CR7InfoApp is composed of two main screens.
+Este trabalho tem como objetivo introduzir o desenvolvimento de aplicações móveis Android utilizando Kotlin.
 
-Main features of the application include:
+O principal objetivo do projeto foi criar uma pequena aplicação capaz de apresentar informações sobre Cristiano Ronaldo através de uma interface simples com navegação entre diferentes ecrãs.
 
-* A main screen presenting the application
-* Navigation to a detail screen
-* Display of player information
-* Simple interface with buttons and text
-* Return navigation
+Através deste projeto foi possível aplicar conceitos fundamentais do Android, tais como:
 
-## Use Case Example
+- Activities  
+- Layouts  
+- Intents  
+- Tratamento de eventos  
+- Design da interface do utilizador  
 
-1. The user launches the application
-2. The main screen appears
-3. The user presses the **Details** button
-4. The application opens the detail screen
-5. The user reads additional information
-6. The user returns to the main screen
+A aplicação demonstra como uma interface móvel básica pode ser construída e como os utilizadores podem navegar entre diferentes ecrãs.
 
 ---
 
-# 3. Architecture and Design
+# 2. Visão Geral do Sistema
 
-The application follows the standard **Android Studio project structure**.
+CR7InfoApp é composta por dois ecrãs principais.
 
-## Project Structure
+Principais funcionalidades da aplicação:
+
+- um ecrã principal que apresenta a aplicação  
+- navegação para um ecrã de detalhe  
+- apresentação de informações sobre o jogador  
+- interface simples com botões e texto  
+- navegação de retorno  
+
+## Exemplo de Caso de Utilização
+
+1. O utilizador inicia a aplicação  
+2. O ecrã principal aparece  
+3. O utilizador pressiona o botão **Details**  
+4. A aplicação abre o ecrã de detalhes  
+5. O utilizador lê informações adicionais  
+6. O utilizador regressa ao ecrã principal  
+
+---
+
+# 3. Arquitetura e Design
+
+A aplicação segue a estrutura padrão de um projeto Android no **Android Studio**.
+
+## Estrutura do Projeto
 
 ```
 CR7InfoApp
@@ -84,7 +85,7 @@ CR7InfoApp
 │   │   │    └── activity_detail.xml
 │   │   │
 │   │   ├── drawable
-│   │   │    └── images and icons
+│   │   │    └── imagens e ícones
 │   │   │
 │   │   └── values
 │   │        ├── strings.xml
@@ -96,30 +97,28 @@ CR7InfoApp
 └── build.gradle
 ```
 
-## Architecture Overview
+## Visão Geral da Arquitetura
 
-The application uses a **basic Activity-based architecture**.
-
-Main components:
+A aplicação utiliza uma **arquitetura baseada em Activities**.
 
 ### MainActivity.kt
 
-Responsible for:
+Responsável por:
 
-* Loading the main screen
-* Managing user interaction
-* Opening the second screen
+- carregar o ecrã principal  
+- gerir a interação do utilizador  
+- abrir o segundo ecrã  
 
 ### DetailActivity.kt
 
-Responsible for:
+Responsável por:
 
-* Displaying additional information
-* Allowing the user to return to the previous screen
+- apresentar informação adicional  
+- permitir que o utilizador regresse ao ecrã anterior  
 
-Navigation between screens is done using **Android Intents**.
+A navegação entre ecrãs é realizada utilizando **Android Intents**.
 
-Example:
+Exemplo:
 
 ```kotlin
 val intent = Intent(this, DetailActivity::class.java)
@@ -128,23 +127,23 @@ startActivity(intent)
 
 ---
 
-# 4. Implementation
+# 4. Implementação
 
-The application was implemented using the following technologies:
+A aplicação foi implementada utilizando:
 
-* Kotlin
-* Android Studio
-* Android SDK
-* XML Layouts
+- Kotlin  
+- Android Studio  
+- Android SDK  
+- layouts em XML  
 
-Main implementation features include:
+Principais funcionalidades implementadas:
 
-* Button click listeners
-* Activity navigation
-* Layout configuration
-* UI elements such as TextViews and Buttons
+- eventos de clique em botões  
+- navegação entre Activities  
+- configuração de layouts  
+- elementos de interface como TextView e Button  
 
-Example code used in the application:
+Exemplo de código utilizado:
 
 ```kotlin
 val detailsButton = findViewById<Button>(R.id.btnDetails)
@@ -157,51 +156,49 @@ detailsButton.setOnClickListener {
 
 ---
 
-# 5. Testing and Validation
+# 5. Testes e Validação
 
-The application was tested using the **Android Emulator** available in Android Studio.
+A aplicação foi testada utilizando o **Android Emulator** do Android Studio.
 
-The following tests were performed:
+Testes realizados:
 
-* Application launch verification
-* Layout display verification
-* Navigation between activities
-* Button interaction validation
+- verificação do arranque da aplicação  
+- verificação da apresentação do layout  
+- navegação entre activities  
+- validação da interação com botões  
 
-The application executed correctly during all tests.
+A aplicação executou corretamente durante todos os testes realizados.
 
 ---
 
-# 6. Usage Instructions
+# 6. Instruções de Utilização
 
-To run the project:
+Para executar o projeto:
 
-1. Clone the repository
+1. Clonar o repositório
 
 ```
 git clone https://github.com/dinis6045/CR7-Info-App
 ```
 
-2. Open the project in **Android Studio**
+2. Abrir o projeto no **Android Studio**
 
-3. Wait for Gradle synchronization
+3. Aguardar a sincronização do **Gradle**
 
-4. Run the application using:
+4. Executar a aplicação utilizando:
 
-* Android Emulator
-  or
-* Physical Android device
+- Android Emulator  
+ou  
+- dispositivo Android físico  
 
-### Requirements
+### Requisitos
 
-* Android Studio
-* Android SDK
-* Kotlin support
-* Android Emulator or Android device
+- Android Studio  
+- Android SDK  
+- suporte para Kotlin  
+- Android Emulator ou dispositivo Android  
 
 ---
-
-
 
 # Screenshots
 
@@ -209,135 +206,113 @@ git clone https://github.com/dinis6045/CR7-Info-App
 
 ![Detail Screen](detail_screen.png)
 
-
+---
 
 # Autonomous Software Engineering Sections
 
-## 7. Prompting Strategy
+## 7. Estratégia de Prompts
 
-AI tools were used to assist with:
+Ferramentas de Inteligência Artificial foram utilizadas para auxiliar em:
 
-* Understanding Android Studio features
-* Debugging Kotlin code
-* Structuring documentation
-* Explaining Android concepts
-
-Typical prompts included requests for help with:
-
-* Kotlin syntax
-* Android layouts
-* Activity navigation
-* Debugging errors
+- compreensão de funcionalidades do Android Studio  
+- depuração de código Kotlin  
+- estruturação da documentação  
+- explicação de conceitos Android  
 
 ---
 
-## 8. Autonomous Agent Workflow
+## 8. Workflow com Agentes Autónomos
 
-AI tools were used during several development stages.
+Ferramentas de IA foram utilizadas em várias fases do desenvolvimento:
 
-### Planning
-
-Understanding how the Android project should be structured.
-
-### Coding
-
-Support with Kotlin code examples and Android components.
-
-### Debugging
-
-Solving compilation and runtime errors.
-
-### Documentation
-
-Helping structure the README file and report sections.
+- planeamento do projeto  
+- apoio na escrita de código Kotlin  
+- depuração de erros  
+- organização da documentação  
 
 ---
 
-## 9. Verification of AI-Generated Artifacts
+## 9. Verificação de Artefactos Gerados por IA
 
-All AI-generated suggestions were verified before being used.
+Todas as sugestões geradas por IA foram verificadas antes de serem utilizadas.
 
-Verification methods included:
+Métodos de verificação:
 
-* Manual code review
-* Running the application
-* Testing the functionality in the emulator
-
-Only working and validated code was included in the final version.
+- revisão manual do código  
+- execução da aplicação  
+- testes no emulador  
 
 ---
 
-## 10. Human vs AI Contribution
+## 10. Contribuição Humana vs IA
 
-### Human Contributions
+### Contribuições Humanas
 
-* Creating the Android project
-* Implementing activities
-* Designing layouts
-* Testing the application
+- criação do projeto Android  
+- implementação das Activities  
+- design dos layouts  
+- testes da aplicação  
 
-### AI Contributions
+### Contribuições da IA
 
-* Assistance with debugging
-* Explaining Android concepts
-* Helping structure documentation
+- apoio na depuração  
+- explicação de conceitos Android  
+- ajuda na estruturação da documentação  
 
 ---
 
-## 11. Ethical and Responsible Use
+## 11. Uso Ético e Responsável
 
-AI tools were used strictly as **support tools**.
+Ferramentas de IA foram utilizadas apenas como **ferramentas de apoio**.
 
-All generated outputs were reviewed and adapted before inclusion in the final project.
-
-The student remains responsible for the final implementation.
+Todos os resultados gerados foram revistos antes de serem incluídos no projeto final.
 
 ---
 
 # Development Process
 
-## 12. Version Control and Commit History
+## 12. Controlo de Versões e Histórico de Commits
 
-Version control was managed using **GitHub**.
+O controlo de versões foi realizado utilizando **Git** e **GitHub**.
 
-Multiple commits were made during development to reflect project progression and track changes.
-
-This ensures transparency and traceability of the development process.
+Foram realizados vários commits durante o desenvolvimento para registar a evolução do projeto.
 
 ---
 
-## 13. Difficulties and Lessons Learned
+## 13. Dificuldades e Lições Aprendidas
 
-During the development of the project several challenges were encountered, including:
+Principais desafios encontrados:
 
-* Understanding Android project structure
-* Working with Activities
-* Handling navigation between screens
-* Debugging Kotlin errors
+- compreender a estrutura de projetos Android  
+- trabalhar com Activities  
+- gerir navegação entre ecrãs  
+- resolver erros em Kotlin  
 
-Through this assignment valuable experience with Android development and Kotlin programming was gained.
-
----
-
-## 14. Future Improvements
-
-Possible improvements include:
-
-* Adding more detailed player information
-* Improving the interface design
-* Adding multimedia content (images or videos)
-* Implementing additional screens
-* Enhancing the user experience
+Este trabalho permitiu adquirir experiência prática no desenvolvimento Android.
 
 ---
 
-## 15. AI Usage Disclosure (Mandatory)
+## 14. Melhorias Futuras
 
-AI tools used during development:
+Possíveis melhorias incluem:
 
-* ChatGPT
+- adicionar mais informações sobre o jogador  
+- melhorar o design da interface  
+- adicionar conteúdos multimédia  
+- implementar novos ecrãs  
+- melhorar a experiência do utilizador  
 
-These tools were used for:
+---
+
+## 15. Declaração de Uso de IA (Obrigatório)
+
+Ferramentas de IA utilizadas:
+
+- ChatGPT
+
+A IA foi utilizada para apoio na depuração, explicação de conceitos de programação e estruturação da documentação.
+
+Todo o conteúdo final foi revisto e validado pelo estudante.
 
 * Debugging assistance
 * Programming explanations
