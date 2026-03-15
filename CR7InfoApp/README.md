@@ -3,7 +3,7 @@
 Course: Mobile Computing
 Student(s): Dinis Lino
 Date: 15 de Março 2025
-Repository URL: https://github.com/dinis6045/CR7-Info-App
+Repository URL: https://github.com/dinis6045/Trabalho-1-todos/tree/main/CR7InfoApp
 
 ---
 
