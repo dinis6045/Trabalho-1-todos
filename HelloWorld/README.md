@@ -3,227 +3,231 @@
 Course: Mobile Computing  
 Student(s): Dinis Lino  
 Date: 15 March 2026  
-Repository URL:  https://github.com/dinis6045/Trabalho-1-todos/tree/main/HelloWorld
+Repository URL: https://github.com/dinis6045/Trabalho-1-todos/tree/main/HelloWorld
 
 ---
 
-## 1. Introduction
+## 1. Introdução
 
-This assignment introduces the fundamentals of Kotlin and Android development.  
-The objective is to familiarize students with the Android development environment and the Kotlin programming language.
+Este trabalho introduz os fundamentos de Kotlin e do desenvolvimento Android.  
+O objetivo é familiarizar os estudantes com o ambiente de desenvolvimento Android e com a linguagem de programação Kotlin.
 
-In this task, the first Android application called **Hello Mobile World** was created using Android Studio. The project demonstrates how Android applications are structured and how Activities, layouts, and resources interact in a mobile application.
+Nesta tarefa foi criada a primeira aplicação Android chamada **Hello Mobile World** utilizando o Android Studio. O projeto demonstra como as aplicações Android são estruturadas e como as Activities, layouts e recursos interagem numa aplicação móvel.
 
-The assignment also aims to help students understand the development workflow, including building, running, and debugging Android applications.
-
----
-
-## 2. System Overview
-
-The HelloWorld application is a simple Android mobile application developed using Kotlin.
-
-Main features:
-
-- Display text using TextView
-- Use of Android resources (strings.xml)
-- Layout design using XML
-- Image display using ImageView
-- Calendar component using CalendarView
-- User interface customization
-
-Use case:
-
-1. The user launches the application.
-2. The main activity is displayed.
-3. The interface shows text, an image, and a calendar component.
+O trabalho também pretende ajudar os estudantes a compreender o fluxo de desenvolvimento, incluindo compilar, executar e depurar aplicações Android.
 
 ---
 
-## 3. Architecture and Design
+## 2. Visão Geral do Sistema
 
-The project follows the default Android Studio project structure.
+A aplicação HelloWorld é uma aplicação móvel Android simples desenvolvida utilizando Kotlin.
 
-Main components:
+Principais funcionalidades:
+
+- Apresentação de texto utilizando **TextView**
+- Utilização de recursos Android (**strings.xml**)
+- Definição de layout utilizando **XML**
+- Apresentação de imagem utilizando **ImageView**
+- Componente de calendário utilizando **CalendarView**
+- Personalização da interface do utilizador
+
+Caso de utilização:
+
+1. O utilizador inicia a aplicação.
+2. A atividade principal é apresentada.
+3. A interface mostra texto, uma imagem e um componente de calendário.
+
+---
+
+## 3. Arquitetura e Design
+
+O projeto segue a estrutura padrão de um projeto Android criado no Android Studio.
+
+Componentes principais:
 
 **AndroidManifest.xml**
-- Defines application configuration
-- Declares the main activity
-- Specifies application metadata
+
+- Define a configuração da aplicação  
+- Declara a atividade principal  
+- Especifica metadados da aplicação  
 
 **MainActivity.kt**
-- Main activity of the application
-- Controls the lifecycle of the application
+
+- Atividade principal da aplicação  
+- Controla o ciclo de vida da aplicação  
 
 **activity_main.xml**
-- Defines the layout of the user interface
-- Contains UI elements such as TextView, ImageView and CalendarView
 
-**res folder**
-- drawable → images used in the app
-- layout → XML layout files
-- mipmap → launcher icons
-- values → strings, themes and colors
+- Define o layout da interface do utilizador  
+- Contém elementos de interface como **TextView**, **ImageView** e **CalendarView**
 
-This architecture separates logic, resources and interface components.
+**Pasta res**
 
----
+- **drawable** → imagens utilizadas na aplicação  
+- **layout** → ficheiros XML de layout  
+- **mipmap** → ícones da aplicação  
+- **values** → strings, temas e cores  
 
-## 4. Implementation
-
-The application was created in **Android Studio** using **Kotlin** as the programming language.
-
-Steps implemented:
-
-1. Creation of a new Android project using **Empty Views Activity**
-2. Configuration of project parameters
-3. Creation of the user interface using XML layout
-4. Definition of strings inside **strings.xml**
-5. Implementation of UI components
-
-Main UI components used:
-
-- **TextView** – displays text
-- **ImageView** – displays an image
-- **CalendarView** – shows a calendar
-- **Layout constraints** – control UI positioning
-
-The application was then executed on an Android Virtual Device (AVD).
+Esta arquitetura separa a lógica da aplicação, os recursos e os componentes da interface.
 
 ---
 
-## 5. Testing and Validation
+## 4. Implementação
 
-The application was tested using the Android Emulator (Pixel 9 Pro AVD).
+A aplicação foi criada no **Android Studio** utilizando **Kotlin** como linguagem de programação.
 
-Tests performed:
+Passos implementados:
 
-- Application startup
-- User interface rendering
-- Resource loading
-- Layout correctness
+1. Criação de um novo projeto Android utilizando **Empty Views Activity**
+2. Configuração dos parâmetros do projeto
+3. Criação da interface do utilizador utilizando layout XML
+4. Definição de strings no ficheiro **strings.xml**
+5. Implementação dos componentes da interface
 
-The application successfully launched and displayed the expected interface elements.
+Principais componentes utilizados na interface:
+
+- **TextView** – apresenta texto
+- **ImageView** – apresenta imagens
+- **CalendarView** – mostra um calendário
+- **Layout constraints** – controlam o posicionamento dos elementos
+
+A aplicação foi executada num **Android Virtual Device (AVD)**.
 
 ---
 
-## 6. Usage Instructions
+## 5. Testes e Validação
 
-To run the project:
+A aplicação foi testada utilizando o **Android Emulator (Pixel 9 Pro AVD)**.
 
-1. Clone the repository
-2. Open the project using Android Studio
-3. Wait for Gradle synchronization
-4. Select the Android Virtual Device
-5. Run the application using the Run button
+Testes realizados:
 
-Requirements:
+- Inicialização da aplicação
+- Renderização da interface
+- Carregamento de recursos
+- Verificação do layout
 
-- Android Studio
-- Android SDK
-- Android Emulator or Android device
+A aplicação iniciou corretamente e apresentou todos os elementos esperados na interface.
+
+---
+
+## 6. Instruções de Utilização
+
+Para executar o projeto:
+
+1. Clonar o repositório
+2. Abrir o projeto no **Android Studio**
+3. Aguardar a sincronização do **Gradle**
+4. Selecionar o **Android Virtual Device**
+5. Executar a aplicação utilizando o botão **Run**
+
+Requisitos:
+
+- Android Studio  
+- Android SDK  
+- Android Emulator ou dispositivo Android  
 
 ---
 
 # Autonomous Software Engineering Sections
 
-## 7. Prompting Strategy
+## 7. Estratégia de Prompts
 
-AI tools were used to assist with documentation structure and explanations of Android development concepts.
+Ferramentas de Inteligência Artificial foram utilizadas para auxiliar na estruturação da documentação e na explicação de conceitos relacionados com desenvolvimento Android.
 
-Prompts focused on:
+Os prompts focaram-se em:
 
-- Structuring the README according to assignment requirements
-- Explaining Android components
-- Organizing project documentation
-
----
-
-## 8. Autonomous Agent Workflow
-
-AI tools assisted in several development stages:
-
-- Documentation writing
-- Code explanation
-- Debugging assistance
-
-However, the application code and project setup were primarily developed manually.
+- Estruturar o README de acordo com os requisitos do trabalho
+- Explicar componentes do Android
+- Organizar a documentação do projeto
 
 ---
 
-## 9. Verification of AI-Generated Artifacts
+## 8. Workflow com Agentes Autónomos
 
-All AI-generated suggestions were manually reviewed.
+Ferramentas de IA auxiliaram em várias etapas do desenvolvimento:
 
-Verification methods included:
+- Escrita da documentação
+- Explicação de código
+- Apoio na resolução de erros
 
-- Running the Android application
-- Checking project configuration
-- Reviewing generated explanations
-
----
-
-## 10. Human vs AI Contribution
-
-Human contributions:
-
-- Application creation
-- Android Studio configuration
-- UI design
-- Testing
-
-AI contributions:
-
-- Documentation assistance
-- Concept clarification
-- README structuring
+No entanto, o código da aplicação e a configuração do projeto foram desenvolvidos principalmente de forma manual.
 
 ---
 
-## 11. Ethical and Responsible Use
+## 9. Verificação de Artefactos Gerados por IA
 
-AI tools were used responsibly as support tools.
+Todas as sugestões geradas por IA foram revistas manualmente.
 
-All generated content was reviewed and validated to ensure correctness and understanding of the project implementation.
+Métodos de verificação utilizados:
+
+- Execução da aplicação Android
+- Verificação da configuração do projeto
+- Revisão das explicações geradas
+
+---
+
+## 10. Contribuição Humana vs IA
+
+Contribuições humanas:
+
+- Criação da aplicação
+- Configuração do Android Studio
+- Design da interface
+- Testes
+
+Contribuições da IA:
+
+- Apoio na documentação
+- Esclarecimento de conceitos
+- Estruturação do README
+
+---
+
+## 11. Uso Ético e Responsável
+
+Ferramentas de IA foram utilizadas de forma responsável apenas como apoio.
+
+Todo o conteúdo gerado foi revisto e validado para garantir a correção e compreensão da implementação do projeto.
 
 ---
 
 # Development Process
 
-## 12. Version Control and Commit History
+## 12. Controlo de Versões e Histórico de Commits
 
-The project was managed using Git and GitHub.
+O projeto foi gerido utilizando **Git** e **GitHub**.
 
-Commits were made during development to track changes and maintain version control.
-
----
-
-## 13. Difficulties and Lessons Learned
-
-Main challenges included:
-
-- Understanding Android Studio project structure
-- Working with XML layouts
-- Configuring Android Virtual Devices
-
-This assignment helped develop fundamental Android development skills.
+Foram realizados commits durante o desenvolvimento para registar alterações e manter controlo de versões.
 
 ---
 
-## 14. Future Improvements
+## 13. Dificuldades e Lições Aprendidas
 
-Possible improvements include:
+Principais desafios encontrados:
 
-- Improving UI design
-- Adding interactive buttons
-- Implementing additional Android features
+- Compreender a estrutura de projetos do Android Studio
+- Trabalhar com layouts XML
+- Configurar Android Virtual Devices
+
+Este trabalho ajudou a desenvolver competências fundamentais no desenvolvimento Android.
 
 ---
 
-## 15. AI Usage Disclosure (Mandatory)
+## 14. Melhorias Futuras
 
-AI tools used:
+Possíveis melhorias incluem:
+
+- Melhorar o design da interface
+- Adicionar botões interativos
+- Implementar funcionalidades adicionais do Android
+
+---
+
+## 15. Declaração de Uso de IA (Obrigatório)
+
+Ferramentas de IA utilizadas:
 
 - ChatGPT
 
-AI was used to assist with documentation writing and explanation of concepts.  
-All work was reviewed and validated by the student.
+A IA foi utilizada para auxiliar na escrita da documentação e na explicação de conceitos.  
+Todo o trabalho foi revisto e validado pelo estudante.
