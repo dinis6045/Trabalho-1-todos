@@ -3,7 +3,7 @@
 Course: Mobile Computing  
 Student(s): Dinis Lino  
 Date: 15 March 2026  
-Repository URL: https://github.com/dinis6045/Trabalho-1-todos
+Repository URL:  https://github.com/dinis6045/Trabalho-1-todos/tree/main/HelloWorld
 
 ---
 
