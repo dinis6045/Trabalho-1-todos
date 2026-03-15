@@ -1,4 +1,4 @@
-# Assignment 1 – Kotlin Exercises and Virtual Library
+# Assignment 1 – Exercícios Kotlin e Biblioteca Virtual
 
 Course: Mobile Computing  
 Student(s): Dinis Lino  
@@ -7,224 +7,234 @@ Repository URL: https://github.com/dinis6045/Trabalho-1-todos/tree/main/tp1
 
 ---
 
-## 1. Introduction
+## 1. Introdução
 
-This project corresponds to TP1 of the Mobile Computing course.
+Este projeto corresponde ao TP1 da disciplina de Computação Móvel.
 
-The purpose of this assignment is to practice fundamental Kotlin programming concepts and object-oriented programming. The work includes three introductory Kotlin exercises and one larger exercise focused on the implementation of a Virtual Library system.
+O objetivo deste trabalho é praticar conceitos fundamentais de programação em Kotlin e programação orientada a objetos. O trabalho inclui três exercícios introdutórios em Kotlin e um exercício maior focado na implementação de um sistema de Biblioteca Virtual.
 
-The assignment covers topics such as arrays, functional programming, exception handling, sequences, classes, objects, inheritance, polymorphism, data classes, and companion objects.
-
----
-
-## 2. System Overview
-
-This project is composed of four main parts:
-
-1. Exercise 1 – creation and initialization of arrays with the first 50 perfect squares using different Kotlin approaches.
-2. Exercise 2 – development of a console-based calculator supporting arithmetic, boolean, and bitwise shift operations.
-3. Exercise 3 – modelling of bouncing ball heights using Kotlin sequences.
-4. Virtual Library – implementation of a library management system using object-oriented programming.
-
-The project demonstrates both procedural and object-oriented use of Kotlin.
+O trabalho aborda temas como arrays, programação funcional, tratamento de exceções, sequences, classes, objetos, herança, polimorfismo, data classes e companion objects.
 
 ---
 
-## 3. Architecture and Design
+## 2. Visão Geral do Sistema
 
-The project is organized into multiple Kotlin files and packages, each corresponding to a different exercise.
+Este projeto é composto por quatro partes principais:
 
-Main parts of the design:
+1. Exercício 1 – criação e inicialização de arrays com os primeiros 50 quadrados perfeitos utilizando diferentes abordagens em Kotlin.
+2. Exercício 2 – desenvolvimento de uma calculadora em consola que suporta operações aritméticas, booleanas e operações de deslocamento de bits.
+3. Exercício 3 – modelação da altura de uma bola que salta utilizando sequences em Kotlin.
+4. Biblioteca Virtual – implementação de um sistema de gestão de biblioteca utilizando programação orientada a objetos.
 
-- Exercise 1 uses arrays and functional mapping approaches.
-- Exercise 2 uses conditional logic with `when`, exception handling, and formatted output.
-- Exercise 3 uses `generateSequence`, filtering, and list conversion.
-- Virtual Library uses a base class `Book`, subclasses `DigitalBook` and `PhysicalBook`, a manager class `Library`, and a data class `LibraryMember`.
-
-The Virtual Library part follows an object-oriented structure with inheritance and abstraction.
+O projeto demonstra tanto a utilização procedural como orientada a objetos da linguagem Kotlin.
 
 ---
 
-## 4. Implementation
+## 3. Arquitetura e Design
 
-### Exercise 1
-An integer array with the first 50 perfect squares was implemented in three different ways:
+O projeto está organizado em vários ficheiros Kotlin e packages, cada um correspondente a um exercício diferente.
 
-- using `IntArray`
-- using a range with `map()`
-- using `Array` with constructor
+Principais partes do design:
 
-### Exercise 2
-A console-based calculator was implemented to support:
+- O Exercício 1 utiliza arrays e abordagens funcionais com `map`.
+- O Exercício 2 utiliza lógica condicional com `when`, tratamento de exceções e formatação de saída.
+- O Exercício 3 utiliza `generateSequence`, filtragem e conversão para listas.
+- A Biblioteca Virtual utiliza uma classe base `Book`, subclasses `DigitalBook` e `PhysicalBook`, uma classe gestora `Library` e uma data class `LibraryMember`.
 
-- addition
-- subtraction
-- multiplication
-- division
-- boolean AND, OR, NOT
-- left shift and right shift
+A parte da Biblioteca Virtual segue uma estrutura orientada a objetos com herança e abstração.
 
-The calculator uses:
+---
 
-- `when` expressions
-- exception handling
+## 4. Implementação
+
+### Exercício 1
+
+Foi implementado um array de inteiros contendo os primeiros 50 quadrados perfeitos de três formas diferentes:
+
+- utilizando `IntArray`
+- utilizando um intervalo com `map()`
+- utilizando `Array` com construtor
+
+### Exercício 2
+
+Foi implementada uma calculadora em consola que suporta:
+
+- adição  
+- subtração  
+- multiplicação  
+- divisão  
+- operações booleanas AND, OR e NOT  
+- deslocamento de bits à esquerda e à direita  
+
+A calculadora utiliza:
+
+- expressões `when`
+- tratamento de exceções
 - string templates
-- formatted output
+- formatação de saída
 
-### Exercise 3
-A sequence of bouncing ball heights was implemented using:
+### Exercício 3
+
+Foi implementada uma sequência de alturas de uma bola a saltar utilizando:
 
 - `generateSequence`
 - `filter`
 - `take`
-- conversion to list
+- conversão para lista
 
-The program starts from 100 meters, applies a 60% bounce ratio, and prints the first 15 valid bounces with height of at least 1 meter.
+O programa começa a partir de 100 metros, aplica um fator de salto de 60% e imprime os primeiros 15 saltos válidos com altura mínima de 1 metro.
 
-### Virtual Library
-The Virtual Library system includes:
+### Biblioteca Virtual
 
-- `Book` as the base class
-- `DigitalBook` and `PhysicalBook` as subclasses
-- `Library` as the manager class
-- `LibraryMember` as a data class
+O sistema da Biblioteca Virtual inclui:
 
-It supports book addition, borrowing, returning, listing, and searching by author.
+- `Book` como classe base
+- `DigitalBook` e `PhysicalBook` como subclasses
+- `Library` como classe gestora
+- `LibraryMember` como data class
 
----
+O sistema suporta:
 
-## 5. Testing and Validation
-
-The project was tested by executing each exercise independently.
-
-Validation included:
-
-- checking correct array generation in Exercise 1
-- testing all calculator operations and invalid input handling in Exercise 2
-- verifying the bounce sequence output in Exercise 3
-- testing book creation, borrowing, returning, and author search in the Virtual Library exercise
-
-The outputs produced by the programs were compared with the expected behaviour described in the assignment.
+- adição de livros
+- empréstimo de livros
+- devolução de livros
+- listagem de livros
+- pesquisa por autor
 
 ---
 
-## 6. Usage Instructions
+## 5. Testes e Validação
 
-To run the project:
+O projeto foi testado executando cada exercício de forma independente.
 
-1. Clone the repository
-2. Open the project in IntelliJ IDEA or Android Studio
-3. Run the Kotlin file corresponding to the exercise you want to test
+A validação incluiu:
 
-Requirements:
+- verificação da correta geração dos arrays no Exercício 1
+- teste de todas as operações da calculadora e tratamento de entradas inválidas no Exercício 2
+- verificação da sequência de alturas no Exercício 3
+- teste da criação de livros, empréstimo, devolução e pesquisa por autor na Biblioteca Virtual
 
-- Kotlin
-- IntelliJ IDEA or Android Studio
-- JDK installed and configured
+Os resultados obtidos foram comparados com o comportamento esperado descrito no enunciado do trabalho.
+
+---
+
+## 6. Instruções de Utilização
+
+Para executar o projeto:
+
+1. Clonar o repositório  
+2. Abrir o projeto no **IntelliJ IDEA** ou **Android Studio**  
+3. Executar o ficheiro Kotlin correspondente ao exercício que pretende testar  
+
+Requisitos:
+
+- Kotlin  
+- IntelliJ IDEA ou Android Studio  
+- JDK instalado e configurado  
 
 ---
 
 # Autonomous Software Engineering Sections
 
-## 7. Prompting Strategy
+## 7. Estratégia de Prompts
 
-AI tools were used to assist in the structuring of the documentation and in clarifying Kotlin programming concepts.
+Ferramentas de Inteligência Artificial foram utilizadas para auxiliar na estruturação da documentação e no esclarecimento de conceitos da linguagem Kotlin.
 
-Representative prompt usage included:
+Exemplos de utilização incluíram:
 
-- requesting help to organize the README according to the required assignment structure
-- clarifying object-oriented concepts such as inheritance and polymorphism
-- improving the description of the implemented features
-
----
-
-## 8. Autonomous Agent Workflow
-
-AI tools contributed mainly to:
-
-- documentation planning
-- explanation of Kotlin syntax and concepts
-- organization of report sections
-
-The implementation of the code itself was primarily carried out manually by the student.
+- ajuda para organizar o README de acordo com a estrutura pedida no trabalho
+- esclarecimento de conceitos de programação orientada a objetos como herança e polimorfismo
+- melhoria das descrições das funcionalidades implementadas
 
 ---
 
-## 9. Verification of AI-Generated Artifacts
+## 8. Workflow com Agentes Autónomos
 
-All AI-assisted outputs were manually reviewed before being included.
+Ferramentas de IA contribuíram principalmente para:
 
-Verification methods included:
+- planeamento da documentação
+- explicação de sintaxe e conceitos de Kotlin
+- organização das secções do relatório
 
-- manual review of text and code
-- execution of all exercises
-- comparison of outputs with the assignment requirements
-- correction of any inconsistencies found during testing
-
----
-
-## 10. Human vs AI Contribution
-
-Primarily human-developed parts:
-
-- implementation of the Kotlin exercises
-- implementation of the Virtual Library logic
-- testing and execution of the programs
-
-AI-assisted parts:
-
-- support in the writing of the README
-- clarification of technical concepts
-- help with structuring the report
+A implementação do código foi realizada maioritariamente de forma manual pelo estudante.
 
 ---
 
-## 11. Ethical and Responsible Use
+## 9. Verificação de Artefactos Gerados por IA
 
-AI tools were used only as support tools for explanation and documentation.
+Todos os conteúdos gerados com apoio de IA foram revistos manualmente antes de serem incluídos.
 
-All final content was reviewed, understood, and validated by the student. Care was taken to ensure that the submitted work reflects the student's own implementation and understanding.
+Métodos de verificação incluíram:
+
+- revisão manual do texto e do código
+- execução de todos os exercícios
+- comparação dos resultados com os requisitos do trabalho
+- correção de inconsistências encontradas durante os testes
+
+---
+
+## 10. Contribuição Humana vs IA
+
+Partes desenvolvidas principalmente pelo estudante:
+
+- implementação dos exercícios em Kotlin
+- implementação da lógica da Biblioteca Virtual
+- testes e execução dos programas
+
+Partes com apoio de IA:
+
+- ajuda na escrita do README
+- esclarecimento de conceitos técnicos
+- organização da estrutura do relatório
+
+---
+
+## 11. Uso Ético e Responsável
+
+Ferramentas de IA foram utilizadas apenas como ferramentas de apoio para explicação e documentação.
+
+Todo o conteúdo final foi revisto, compreendido e validado pelo estudante. Foi garantido que o trabalho submetido reflete a implementação e compreensão do próprio estudante.
 
 ---
 
 # Development Process
 
-## 12. Version Control and Commit History
+## 12. Controlo de Versões e Histórico de Commits
 
-Version control was managed using Git and GitHub, as required in the assignment.
+O controlo de versões foi realizado utilizando **Git** e **GitHub**, conforme requerido no trabalho.
 
-The commit history reflects the progression of the work throughout the development of the project, including implementation updates and documentation changes.
-
----
-
-## 13. Difficulties and Lessons Learned
-
-Main difficulties encountered during the assignment included:
-
-- choosing appropriate Kotlin structures for each exercise
-- handling exceptions and invalid input in the calculator
-- understanding sequence generation in Kotlin
-- designing the object-oriented structure of the Virtual Library
-
-The assignment helped reinforce both Kotlin fundamentals and object-oriented programming skills.
+O histórico de commits reflete a evolução do projeto ao longo do desenvolvimento, incluindo alterações na implementação e na documentação.
 
 ---
 
-## 14. Future Improvements
+## 13. Dificuldades e Lições Aprendidas
 
-Possible future improvements include:
+Principais dificuldades encontradas:
 
-- adding a menu-based interface for selecting the exercises
-- improving the calculator with additional operations
-- extending the Virtual Library with file persistence
-- adding more advanced search and member management features
+- escolher as estruturas Kotlin mais adequadas para cada exercício
+- tratar exceções e entradas inválidas na calculadora
+- compreender a geração de sequences em Kotlin
+- desenhar a estrutura orientada a objetos da Biblioteca Virtual
+
+Este trabalho permitiu consolidar os conhecimentos de Kotlin e de programação orientada a objetos.
 
 ---
 
-## 15. AI Usage Disclosure (Mandatory)
+## 14. Melhorias Futuras
 
-AI tools used:
+Possíveis melhorias incluem:
+
+- adicionar um menu para selecionar os exercícios
+- melhorar a calculadora com mais operações
+- adicionar persistência em ficheiro para a Biblioteca Virtual
+- implementar funcionalidades mais avançadas de pesquisa e gestão de membros
+
+---
+
+## 15. Declaração de Uso de IA (Obrigatório)
+
+Ferramentas de IA utilizadas:
 
 - ChatGPT
 
-AI was used for documentation support, clarification of Kotlin concepts, and report structuring. All final content remains the responsibility of the student.
+A IA foi utilizada para apoio na documentação, esclarecimento de conceitos de Kotlin e organização do relatório. Todo o conteúdo final permanece da responsabilidade do estudante.
